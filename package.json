@@ -9,8 +9,8 @@
     "sharp"
   ],
   "scripts": {
-    "dev:wrangler": "wrangler pages dev --local --compatibility-date=2023-02-05 -- yarn vite",
-    "deploy:wrangler": "yarn build && wrangler pages publish pages",
+    "dev:wrangler": "wrangler pages dev --local --compatibility-date=2023-02-05 -- bun vite --mode ssr",
+    "deploy:wrangler": "bun build && wrangler pages publish pages",
     "build": "qwik build",
     "build.client": "vite build",
     "build.preview": "vite build --ssr src/entry.preview.tsx",
