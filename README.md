@@ -1,5 +1,15 @@
 https://github.com/honojs/examples/tree/main/pages-stack
 
+# About this project
+
+This project aims to check the feasibility of new tech stack:
+
+- [Qwik](https://qwik.dev/)
+- [Hono](https://hono.dev/)
+  - [Bun](https://bun.sh/)
+- [Wrangler](https://developers.cloudflare.com/workers/cli-wrangler)
+  - [Cloudflare Pages](https://pages.cloudflare.com/)
+
 # Qwik City App ⚡️
 
 - [Qwik Docs](https://qwik.builder.io/)
