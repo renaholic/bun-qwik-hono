@@ -9,14 +9,12 @@
     "sharp"
   ],
   "scripts": {
-    "dev:wrangler": "wrangler pages dev --local --compatibility-date=2023-02-05 -- bun vite --mode ssr",
-    "deploy:wrangler": "bun build && wrangler pages publish pages",
+    "dev": "wrangler pages dev --local --compatibility-date=2023-02-05 -- bun vite --mode ssr",
+    "deploy": "bun build && wrangler pages publish pages",
     "build": "qwik build",
     "build.client": "vite build",
     "build.preview": "vite build --ssr src/entry.preview.tsx",
     "build.types": "tsc --incremental --noEmit",
-    "deploy": "echo 'Run \"npm run qwik add\" to install a server adapter'",
-    "dev": "vite --mode ssr",
     "dev.debug": "node --inspect-brk ./node_modules/vite/bin/vite.js --mode ssr --force",
     "fmt": "prettier --write .",
     "fmt.check": "prettier --check .",
