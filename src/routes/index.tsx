@@ -11,7 +11,7 @@ import Starter from '~/components/starter/next-steps/next-steps';
 export const client = hc<AppType>('/');
 
 export default component$(() => {
-  const randomNumber = useSignal<number | undefined>(0);
+  const randomNumber = useSignal<number | undefined>(undefined);
   return (
     <>
       <Hero />
@@ -33,7 +33,7 @@ export default component$(() => {
               const { randomNumber: result } = await res.json();
               randomNumber.value = result;
             }}>
-            {randomNumber ?? 'Make Random Number'}
+            {randomNumber.value ?? 'Make Random Number'}
           </button>
         </div>
       </div>
